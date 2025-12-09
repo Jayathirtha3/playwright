@@ -1,0 +1,38 @@
+---
+version: "0.1"
+globalTimeout: 90
+testSuiteTimeout: 90
+testSuiteStep: 90
+runson: win
+autosplit: true
+retryOnFailure: false
+maxRetries: 1
+concurrency: 3
+report: true
+mergeArtifacts: true
+
+pre:
+  - npm install
+  - npx playwright install
+cacheKey: '{{ checksum "package-lock.json" }}'
+cacheDirectories:
+  - node_modules
+
+env:
+  LT_USERNAME: jayathirtha3   # Replace with the secret key for your username
+  LT_ACCESS_KEY: LT_uuGArh2n4WJdfPQoCq8BZXmxX7dvmcvXvVL11YC6IF9Zg5Z  # Replace with the secret key for your access key
+testDiscovery:
+  type: raw
+  mode: dynamic
+  command: grep -lr 'describe' tests
+  
+testRunnerCommand: npx playwright test $test
+
+uploadArtefacts:
+  [{
+    "name": "Reports",
+    "path": ["Reports/"]
+  }]
+
+jobLabel: [playwright-VanillaJS, win, autosplit] 
+
