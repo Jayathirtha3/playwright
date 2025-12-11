@@ -2,15 +2,15 @@ Autosplit
 Following id's of testcases
 TestScenario1:
 simpleFormDemoTest
-Chrome -
-Edge -
+Chrome - LAMMY-GNE5G-5GROX-SPOCR
+Edge - JRGXZ-X9QJG-VR5FL-XTPRK
 
 TestScenario2:
 sliderDemoTest
-Chrome - 
-Edge - 
+Chrome - YHIYK-YTND7-QUOPW-SSLRA
+Edge - GJEBR-M4D3Q-TEZAS-HWXAI
 
 TestScenario3:
 FormFillingTest
-Chrome -
-Edge -
+Chrome - PDSCN-YZ5TE-WY8TH-FUVPB
+Edge - ERO9A-RLOSO-Q5UBT-3JNTE
