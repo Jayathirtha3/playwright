@@ -40,10 +40,10 @@ test.describe('PlayWright Vanilla JS - 3', () => {
     });
        // Fill in the form fields
     console.log("Filling in the form fields...");
-    await name.fill("Sham Lomte");
-    await email.fill("Sham.lomte@nintex.com");
-    await password.fill("Sham@1234");
-    await company.fill("Nintex");
+    await name.fill("Jay");
+    await email.fill("jay@codex.com");
+    await password.fill("Jay@1234");
+    await company.fill("codex");
     await webSiteName.fill("google");
     await page.selectOption("//select[@name='country']", { label: "United States" }); // Select by label
     await city.fill("New York");
